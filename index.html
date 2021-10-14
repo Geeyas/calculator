@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Calculator </title>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"
+  	></script>
+	
+</head>
+<body>
+	<div class="calc">
+
+		<form class="form">
+			<input class="calc-display">
+		</form>
+		<table class="tble">
+			<tr id="row">
+				<td> <input type="button" value="C" onclick="clr()"> </td>
+				<td> <input type="button" value="CE" onclick="del()"> </td>
+				<td> <input type="button" value="/" onclick="insrt('/')"> </td>
+				<td> <input type="button" value="X" onclick="insrt('*')"> </td>
+			</tr>
+
+			<tr id="row">
+				<td> <input type="button" value="7" onclick="insrt(7)"> </td>
+				<td> <input type="button" value="8" onclick="insrt(8)"> </td>
+				<td> <input type="button" value="9"onclick="insrt(9)"> </td>
+				<td> <input type="button" value="-" onclick="insrt('-')"> </td>
+			</tr>
+
+			
+			<tr id="row">
+				<td> <input type="button" value="4" onclick="insrt(4)"> </td>
+				<td> <input type="button" value="5" onclick="insrt(5)"> </td>
+				<td> <input type="button" value="6" onclick="insrt(6)"> </td>
+				<td> <input type="button" value="+" onclick="insrt('+')"> </td>
+			</tr>
+
+			<tr id="row">
+				<td> <input type="button" value="1" onclick="insrt(1)"> </td>
+				<td> <input type="button" value="2" onclick="insrt(2)"> </td>
+				<td> <input type="button" value="3" onclick="insrt(3)"> </td>
+				<td> <input type="button" value="=" onclick="eql()"> </td>
+			</tr>
+
+			<tr id="row">
+				<td><input type="button" value="0" onclick="insrt(0)"> </td>
+				<td><input type="button" value="." onclick="insrt('.')"> </td>
+
+			</tr>
+
+
+		</table>
+
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+
+	
+</body>
+</html>
